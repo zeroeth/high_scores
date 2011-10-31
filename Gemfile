@@ -10,4 +10,5 @@ group :development, :test do
   gem 'fabrication'
   gem 'rspec-rails'
   gem 'cucumber-rails'
+  gem 'shoulda-matchers'
 end

@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe HighScore do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should belong_to(:high_score_list) }
 end

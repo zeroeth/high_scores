@@ -1,4 +1,6 @@
 HighScores::Application.routes.draw do
+  get "high_score_lists/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
