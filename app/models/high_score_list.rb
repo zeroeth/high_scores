@@ -6,4 +6,8 @@ class HighScoreList < ActiveRecord::Base
   def to_param
     self.game_id
   end
+
+  def to_json(options = {})
+    super({:include => :high_scores}.merge(options))
+  end
 end
