@@ -20,5 +20,7 @@ describe HighScore do
     it "limits the list to 10 items" do
       high_score_list.reload.high_scores.top_ten.all.count.should == 10
     end
+
+    it "keeps older entry before newer entry if same score"
   end
 end
