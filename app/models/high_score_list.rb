@@ -1,5 +1,5 @@
 class HighScoreList < ActiveRecord::Base
-  has_many :high_scores
+  has_many :high_scores, :limit => 10, :order => 'score DESC, created_at'
 
   validates_presence_of :game_id
 
